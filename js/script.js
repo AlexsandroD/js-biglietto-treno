@@ -40,6 +40,9 @@ else{
 let finalPrice = total.toFixed(2);
 console.log(finalPrice);
 
-document.getElementById('km').innerHTML = chilometri;
-document.getElementById('anni').innerHTML = anni;
-document.getElementById('totale').innerHTML = finalPrice;
+document.getElementById('km').innerHTML = chilometri + ' km';
+document.getElementById('anni').innerHTML = anni + ' anni';
+document.getElementById('totale').innerHTML = finalPrice + ' €';
+
+const nero = document.querySelector('.nero');
+nero.style.color = 'black';a
