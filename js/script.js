@@ -6,7 +6,6 @@ console.log(chilometri);
 if(isNaN(chilometri)){
     chilometri = parseFloat(prompt('Inerisci un numero valido per i Chilometri'));
 }
-
 const anni = parseInt(prompt('Etá'));
 console.log(anni);
 
@@ -21,7 +20,7 @@ let total = 0;
 
 
 
-if(anni >= 18 && anni <=65){
+if(anni >= 18 && anni <= 65){
     total = chilometri * prezzoBigliettoKm;
     
 }
@@ -37,6 +36,8 @@ else{
 }
 
 
+
+
 let finalPrice = total.toFixed(2);
 console.log(finalPrice);
 
@@ -45,4 +46,4 @@ document.getElementById('anni').innerHTML = anni + ' anni';
 document.getElementById('totale').innerHTML = finalPrice + ' €';
 
 const nero = document.querySelector('.nero');
-nero.style.color = 'black';a
+nero.style.color = 'black';
